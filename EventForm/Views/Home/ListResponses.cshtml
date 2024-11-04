@@ -1,0 +1,21 @@
+﻿@model IEnumerable<EventForm.Models.GuestResponse>
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var row in Model)
+        {
+            <tr>
+
+                <th>@row.Name</th>
+                <th>@row.Email</th>
+                <th>@row.Phone</th>
+            </tr>
+        }
+    </tbody>
+</table> 

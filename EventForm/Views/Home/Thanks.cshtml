@@ -1,0 +1,17 @@
+﻿@model EventForm.Models.GuestResponse
+<h1> Thanke You, @Model.Name!</h1> 
+<p>
+    @if (Model.WillAttend == true)
+    {
+        @: Thanke You for participations.
+    }
+    else
+    {
+        @: Sorry
+    }
+</p>
+<p>
+    Click
+    <a asp-action="ListResponses">here</a>
+    to see who is coming.
+</p>  
